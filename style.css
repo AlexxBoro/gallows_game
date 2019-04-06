@@ -47,3 +47,11 @@ body {
     color:white;
     border:3px solid white;
 }
+.reset{
+    color:green;
+    cursor: pointer;
+    font-size: 2em;
+}
+.reset:hover{
+    color:white;
+}

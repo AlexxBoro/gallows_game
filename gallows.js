@@ -1,8 +1,22 @@
-let guess = "no money no love";
+let guesses = ["no money no love", "no women no cry", "carpe diem"]
+
+function getGuess(){
+    let minimum = 0;
+    let maximum = guesses.length-1;
+    let randomnumber = Math.floor(Math.random() * (maximum - minimum + 1)) + minimum;
+    return guesses[randomnumber];
+}
+
+let guess = getGuess();
+console.log(guess);
 guess = guess.toUpperCase();
 
 let guessLength = guess.length;
 let wrongAnswers = 0;
+
+let yesSound = new Audio("yes.wav");
+let noSound = new Audio("no.wav");
+
 
 let guess1 = "";
 
@@ -77,8 +91,9 @@ function checkLetter(num){
             guess1 = guess1.insertChar(i,letters[num]);
             correctGuess = true;
         }
-
+    }    
         if(correctGuess == true){
+            yesSound.play();
             let singleLetter = "let" + num;
             document.getElementById(singleLetter).style.background = "#003300";
             document.getElementById(singleLetter).style.color = "#00C000";
@@ -88,17 +103,24 @@ function checkLetter(num){
             typeEntry();
         }
         else {
+            noSound.play();
             let singleLetter = "let" + num;
             document.getElementById(singleLetter).style.background = "#330000";
             document.getElementById(singleLetter).style.color = "#C00000";
             document.getElementById(singleLetter).style.border = "3px solid #C00000";
             document.getElementById(singleLetter).style.cursor = "default";
+            document.getElementById(singleLetter).setAttribute("onclick", ";");
+
 
             wrongAnswers++;
             let pic = "img/s" + wrongAnswers + ".jpg";
-            console.log(wrongAnswers + "<- wrong answers");
             document.getElementById("gallows").innerHTML = '<img src="'+ pic +'" alt="" />';
         }
+    if (guess == guess1){
+        document.getElementById("alphabet").innerHTML = 'Success!' + '<br /><br /><span class="reset" onclick="location.reload()">AGAIN?</span>';
+    }    
+    if (wrongAnswers >= 9){
+        document.getElementById("alphabet").innerHTML = 'Fail :-(' + '<br /><br /><span class="reset" onclick="location.reload()">AGAIN?</span>';
     }
 
 }
