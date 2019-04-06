@@ -1,0 +1,49 @@
+body {
+    background-color: black;
+    color:lightgrey;
+    font-size: 28px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.container {
+    margin: 0 auto;
+    border: 1px solid white;
+    display:flex;
+    flex-direction: column;
+}
+
+.input {
+    text-align:center;
+    border: 1px solid yellow;
+    font-size:2em;
+    min-height:60px;
+}
+
+.gallows{
+    border: 1px solid blue;
+    min-height: 280px;
+}
+
+.alphabet{
+    border: 1px solid green;
+    min-height: 280px;
+    display:flex;
+    flex-wrap:wrap;
+    width:30%;
+}
+
+.letter{
+    width:1em;
+    height:1em;
+    text-align:center;
+    padding:5px;
+    margin:2.5px 5px;
+    border:3px solid gray;
+    cursor: pointer;
+    border-radius:15px;
+}
+.letter:hover{
+    background-color: #222222;
+    color:white;
+    border:3px solid white;
+}
