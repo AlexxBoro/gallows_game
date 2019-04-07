@@ -32,11 +32,11 @@ body {
 }
 
 .alphabet {
-  min-height: 280px;
+  min-height: 300px;
   display: flex;
   flex-wrap: wrap;
-  min-width: 280px;
-  width: 280px;
+  min-width: 300px;
+  width: 300px;
   padding: 1em;
 }
 
@@ -79,11 +79,10 @@ body {
   }
 
   .alphabet {
-    min-height: 280px;
     display: flex;
     flex-wrap: wrap;
-    width: 30%;
-    padding: 0;
+    padding: 1em;
+    margin:1em;
   }
 }
 
@@ -97,5 +96,6 @@ body {
     min-height: 70px;
     width: 100%;
     padding: 0.5em 0.5em;
+    margin: 0.5em 0.5em;
   }
 }
