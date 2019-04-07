@@ -26,7 +26,7 @@ body {
 
 .gallows {
   min-height: 280px;
-  min-width:280px;
+  min-width:400px;
   width: 400px;
   padding: 1em;
 }
@@ -35,7 +35,7 @@ body {
   min-height: 280px;
   display: flex;
   flex-wrap: wrap;
-  min-width: 250px;
+  min-width: 280px;
   width: 280px;
   padding: 1em;
 }
