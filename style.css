@@ -1,57 +1,98 @@
 body {
-    background-color: black;
-    color:lightgrey;
-    font-size: 28px;
-    font-family: 'Roboto Mono', monospace;
+  background-color: black;
+  color: lightgrey;
+  font-size: 28px;
+  font-family: "Roboto Mono", monospace;
 }
 
 .container {
-    margin: 0 auto;
-    border: 1px solid white;
-    display:flex;
-    flex-direction: column;
+  margin: 0 auto;
+  padding: 1em 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .input {
-    text-align:center;
-    border: 1px solid yellow;
-    font-size:2em;
-    min-height:60px;
+  text-align: center;
+  font-size: 2em;
+  min-height: 60px;
+  padding: 1em 0;
 }
 
-.gallows{
-    border: 1px solid blue;
+.bottom-container {
+  display: flex;
+  justify-content: center;
+}
+
+.gallows {
+  min-height: 280px;
+  padding: 1em;
+}
+
+.alphabet {
+  min-height: 280px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 30%;
+  padding: 1em;
+}
+
+.letter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1.2em;
+  height: 1.2em;
+  padding: 5px;
+  margin: 2.5px 5px;
+  border: 3px solid gray;
+  cursor: pointer;
+  border-radius: 15px;
+}
+.letter:hover {
+  background-color: #222222;
+  color: white;
+  border: 3px solid white;
+}
+.reset {
+  color: green;
+  cursor: pointer;
+  font-size: 2em;
+}
+.reset:hover {
+  color: white;
+}
+
+@media only screen and (max-width: 1250px) {
+  .container {
+    padding: 0;
+  }
+  .input {
+    padding: 0.5em 0;
+  }
+  .gallows {
     min-height: 280px;
-}
+    padding: 0;
+  }
 
-.alphabet{
-    border: 1px solid green;
+  .alphabet {
     min-height: 280px;
-    display:flex;
-    flex-wrap:wrap;
-    width:30%;
+    display: flex;
+    flex-wrap: wrap;
+    width: 30%;
+    padding: 0;
+  }
 }
 
-.letter{
-    width:1em;
-    height:1em;
-    text-align:center;
-    padding:5px;
-    margin:2.5px 5px;
-    border:3px solid gray;
-    cursor: pointer;
-    border-radius:15px;
-}
-.letter:hover{
-    background-color: #222222;
-    color:white;
-    border:3px solid white;
-}
-.reset{
-    color:green;
-    cursor: pointer;
-    font-size: 2em;
-}
-.reset:hover{
-    color:white;
+@media only screen and (max-width: 850px) {
+  .bottom-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .alphabet {
+    min-height: 70px;
+    width: 100%;
+    padding: 0.5em 0.5em;
+  }
 }
