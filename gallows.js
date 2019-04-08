@@ -1,4 +1,4 @@
-let guesses = ["no money no love", "no women no cry", "carpe diem", "no pain no gain", "i never lose either i win or i learn", "who dares wins"];
+let guesses = ["no money no love", "veni vidi vici", "no women no cry", "carpe diem", "no pain no gain", "i never lose either i win or i learn", "who dares wins"];
 
 function getGuess() {
   let minimum = 0;
@@ -34,34 +34,7 @@ function typeEntry() {
 
 window.onload = start;
 
-let letters = new Array(26);
-
-letters[0] = "A";
-letters[1] = "B";
-letters[2] = "C";
-letters[3] = "D";
-letters[4] = "E";
-letters[5] = "F";
-letters[6] = "G";
-letters[7] = "H";
-letters[8] = "I";
-letters[9] = "J";
-letters[10] = "K";
-letters[11] = "L";
-letters[12] = "M";
-letters[13] = "N";
-letters[14] = "O";
-letters[15] = "P";
-letters[16] = "Q";
-letters[17] = "R";
-letters[18] = "S";
-letters[19] = "T";
-letters[20] = "U";
-letters[21] = "V";
-letters[22] = "W";
-letters[23] = "X";
-letters[24] = "Y";
-letters[25] = "Z";
+let letters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
 
 function start() {
   let alphabetContent = "";

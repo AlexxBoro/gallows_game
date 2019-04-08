@@ -5,97 +5,190 @@ body {
   font-family: "Roboto Mono", monospace;
 }
 
-.container {
-  margin: 0 auto;
-  padding: 1em 0;
-  display: flex;
-  flex-direction: column;
-}
+@media only screen and (min-width: 1251px) {
+  .container {
+    margin: 0 auto;
+    padding: 1em 0;
+    display: flex;
+    flex-direction: column;
+  }
 
-.input {
-  text-align: center;
-  font-size: 2em;
-  min-height: 60px;
-  padding: 1em 0;
-}
+  .input {
+    text-align: center;
+    font-size: 2em;
+    min-height: 60px;
+    padding: 1em 0;
+  }
 
-.bottom-container {
-  display: flex;
-  justify-content: center;
-}
+  .bottom-container {
+    display: flex;
+    justify-content: center;
+  }
 
-.gallows {
-  min-height: 280px;
-  min-width:400px;
-  width: 400px;
-  padding: 1em;
-}
+  .gallows {
+    min-height: 280px;
+    min-width: 400px;
+    width: 400px;
+    padding: 1em;
+  }
 
-.alphabet {
-  min-height: 300px;
-  display: flex;
-  flex-wrap: wrap;
-  min-width: 300px;
-  width: 300px;
-  padding: 1em;
-}
+  .alphabet {
+    min-height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 400px;
+    width: 400px;
+    padding: 1em;
+    margin: 1em 1em 1em 2em;
+  }
 
-.letter {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 1.2em;
-  height: 1.2em;
-  padding: 5px;
-  margin: 2.5px 5px;
-  border: 3px solid gray;
-  cursor: pointer;
-  border-radius: 15px;
-}
-.letter:hover {
-  background-color: #222222;
-  color: white;
-  border: 3px solid white;
-}
-.reset {
-  color: green;
-  cursor: pointer;
-  font-size: 2em;
-}
-.reset:hover {
-  color: white;
+  .letter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1.2em;
+    height: 1.2em;
+    padding: 5px;
+    margin: 2.5px 5px;
+    border: 3px solid gray;
+    cursor: pointer;
+    border-radius: 15px;
+  }
+  .letter:hover {
+    background-color: #222222;
+    color: white;
+    border: 3px solid white;
+  }
+  .reset {
+    color: green;
+    cursor: pointer;
+    font-size: 2em;
+  }
+  .reset:hover {
+    color: white;
+  }
 }
 
 @media only screen and (max-width: 1250px) {
   .container {
+    margin: 0 auto;
     padding: 0;
+    display: flex;
+    flex-direction: column;
   }
+
   .input {
+    text-align: center;
+    font-size: 2em;
+    min-height: 60px;
     padding: 0.5em 0;
   }
+
+  .bottom-container {
+    display: flex;
+    justify-content: center;
+  }
+
   .gallows {
     min-height: 280px;
-    padding: 0;
+    min-width: 400px;
+    width: 400px;
+    padding: 0em;
+  }
+
+  .alphabet {
+    min-height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 400px;
+    width: 400px;
+    padding: 1em;
+    margin: 1em 1em 1em 2em;
+  }
+
+  .letter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1.2em;
+    height: 1.2em;
+    padding: 5px;
+    margin: 2.5px 5px;
+    border: 3px solid gray;
+    cursor: pointer;
+    border-radius: 15px;
+  }
+  .letter:hover {
+    background-color: #222222;
+    color: white;
+    border: 3px solid white;
+  }
+  .reset {
+    color: green;
+    cursor: pointer;
+    font-size: 2em;
+  }
+  .reset:hover {
+    color: white;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .container {
+    margin: 0 auto;
+    padding: 1em 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .input {
+    text-align: center;
+    font-size: 2em;
+    min-height: 60px;
+    padding: 1em 0;
+  }
+
+  .bottom-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .gallows {
+    min-height: 280px;
+    min-width: 400px;
+    width: 400px;
+    padding: 1em;
   }
 
   .alphabet {
     display: flex;
     flex-wrap: wrap;
-    padding: 1em;
-    margin:1em;
-  }
-}
-
-@media only screen and (max-width: 850px) {
-  .bottom-container {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-  }
-  .alphabet {
+    min-width: 300px;
     min-height: 70px;
     width: 100%;
     padding: 0.5em 0.5em;
     margin: 0.5em 0.5em;
+    justify-content: center;
+  }
+
+  .letter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2em;
+    height: 2em;
+    padding: 5px;
+    margin: 2.5px 5px;
+    border: 3px solid gray;
+    cursor: pointer;
+    border-radius: 15px;
+    font-size: 1.5em;
+  }
+  .reset {
+    color: green;
+    cursor: pointer;
+    font-size: 2em;
   }
 }
