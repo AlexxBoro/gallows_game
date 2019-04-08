@@ -5,7 +5,7 @@ body {
   font-family: "Roboto Mono", monospace;
 }
 
-@media only screen and (min-width: 1251px) {
+@media (min-width: 1251px) {
   .container {
     margin: 0 auto;
     padding: 1em 0;
@@ -69,7 +69,7 @@ body {
   }
 }
 
-@media only screen and (min-width: 851px) and (max-width: 1250px) {
+@media (min-width: 851px) and (max-width: 1250px) {
   .container {
     margin: 0 auto;
     padding: 0;
@@ -133,7 +133,7 @@ body {
   }
 }
 
-@media only screen and (min-width: 0px) and (max-width: 850px) {
+@media (min-width: 0px) and (max-width: 850px) {
   .container {
     margin: 0 auto;
     padding: 1em 0;
