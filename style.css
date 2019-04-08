@@ -142,24 +142,24 @@
 
 @media (min-width: 0px) and (max-width: 850px) {
   body {
-    background-color: yellow;
+    background-color: black;
     color: lightgrey;
     font-size: 28px;
     font-family: "Roboto Mono", monospace;
+    overflow: hidden;
   }
 
   .container {
     margin: 0 auto;
-    padding: 1em 0;
     display: flex;
     flex-direction: column;
   }
 
   .input {
     text-align: center;
-    font-size: 2em;
-    min-height: 60px;
-    padding: 1em 0;
+    font-size: 1.2em;
+    min-height: 20px;
+    padding: 0 0 0.5em 0;
   }
 
   .bottom-container {
@@ -170,20 +170,18 @@
   }
 
   .gallows {
-    min-height: 280px;
-    min-width: 400px;
-    width: 400px;
-    padding: 1em;
+    min-height: 300px;
+    min-width: 450px;
+    width: 450px;
   }
 
   .alphabet {
     display: flex;
     flex-wrap: wrap;
     min-width: 300px;
-    min-height: 70px;
+    min-height: 20px;
     width: 100%;
     padding: 0.5em 0.5em;
-    margin: 0.5em 0.5em;
     justify-content: center;
   }
 
@@ -191,9 +189,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 2em;
-    height: 2em;
-    padding: 5px;
+    width: 1em;
+    height: 1em;
+    padding: 3px;
     margin: 2.5px 5px;
     border: 3px solid gray;
     cursor: pointer;
