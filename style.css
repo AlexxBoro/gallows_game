@@ -144,7 +144,7 @@
   body {
     background-color: black;
     color: lightgrey;
-    font-size: 28px;
+    font-size: 20px;
     font-family: "Roboto Mono", monospace;
     overflow: hidden;
   }
@@ -170,9 +170,17 @@
   }
 
   .gallows {
-    min-height: 300px;
-    min-width: 450px;
-    width: 450px;
+    min-height: 150px;
+    min-width: 1500px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .gallows > img {
+    height: 200px;
+    width:250px;
   }
 
   .alphabet {
@@ -195,8 +203,8 @@
     margin: 2.5px 5px;
     border: 3px solid gray;
     cursor: pointer;
-    border-radius: 15px;
-    font-size: 1.5em;
+    border-radius: 10px;
+    font-size: 1.2em;
   }
   .reset {
     color: green;
